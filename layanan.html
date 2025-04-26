@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan Halaman Web dengan CSS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Menu Samping</h2>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <h2>Layanan</h2>
+        <table width="100%">
+          <tr>
+            <td
+              colspan="3"
+              style="
+                background-color: #bbe9db;
+                text-align: center;
+                padding: 20px;
+                border-radius: 10px;
+              "
+            >
+              <div
+                id="layananCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                    <img
+                      src="bg1.jpg"
+                      class="d-block w-100"
+                      alt="Layanan 1"
+                      style="height: 400px; object-fit: cover"
+                    />
+                    <div
+                      class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                    >
+                      <h5>Layanan Desain Website</h5>
+                      <p>
+                        Kami menyediakan layanan desain UI/UX yang responsif
+                        untuk kebutuhan bisnis Anda.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                    <img
+                      src="bg2.jpg"
+                      class="d-block w-100"
+                      alt="Layanan 2"
+                      style="height: 400px; object-fit: cover"
+                    />
+                    <div
+                      class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                    >
+                      <h5>Pembuatan Website</h5>
+                      <p>
+                        Mulai dari landing page hingga e-commerce, kami siap
+                        membangun website profesional untuk anda.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="carousel-item">
+                    <img
+                      src="bg3.jpg"
+                      class="d-block w-100"
+                      alt="Layanan 3"
+                      style="height: 400px; object-fit: cover"
+                    />
+                    <div
+                      class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                    >
+                      <h5>Optimasi SEO</h5>
+                      <p>
+                        Optimalkan performa dan visibilitas website Anda di
+                        mesin pencari.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Kontrol tombol -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#layananCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#layananCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Berikutnya</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Website Saya</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

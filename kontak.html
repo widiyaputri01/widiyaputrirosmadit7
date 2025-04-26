@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Halaman Web dengan CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Menu Samping</h2>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <h2>Hubungi Kami via WhatsApp</h2>
+        <form id="formWA">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+          <label for="pesan">Pesan:</label>
+          <textarea id="pesan" name="pesan" rows="5" required></textarea>
+          <button type="submit">Kirim ke WhatsApp</button>
+        </form>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Website Saya</p>
+    </footer>
+    <script>
+      document
+        .getElementById("formWA")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Ambil nilai input
+          var nama = document.getElementById("nama").value;
+          var pesan = document.getElementById("pesan").value;
+
+          // Nomor WhatsApp tujuan
+          var noWA = "6289621468468"; // Ganti dengan nomor kamu sendiri
+
+          // Gabungkan pesan (dengan backtick)
+          var teks = `Halo, saya ${nama}. %0A${pesan}`;
+
+          // Buka link WhatsApp
+          window.open(`https://wa.me/${noWA}?text=${teks}`, "_blank");
+        });
+    </script>
+  </body>
+</html>
